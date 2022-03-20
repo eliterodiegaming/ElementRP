@@ -9,7 +9,7 @@ RegisterNUICallback('main', function(data)
     SetDisplay(false)
 end)
 
-RegisterNUICallback('error' function(data)
+RegisterNUICallback('error', function(data)
     chat(data.error, {255, 0, 0})
     SetDisplay(false)
 end)
