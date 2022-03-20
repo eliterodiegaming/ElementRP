@@ -9,7 +9,7 @@ $(function () {
     display(false)
     window.addEventListener("message", function(event) {
         var item = event.data;
-        if (item.type === "ui"; {
+        if (item.type === "ui"); {
             if(item.status == true) {
                 display(true)
             } else {
@@ -23,12 +23,14 @@ $(function () {
             $.post("http://NUI/exit", JSON.stringify({}));
             return;
         }
+        return;
     }
 
     $("#close").click(function(){
         $.post("http://NUI/exit", JSON.stringify({}));
         return;
     })
+    return;
 
     $("#submit").click(function(){
         let inputValue = $("#input").val()
