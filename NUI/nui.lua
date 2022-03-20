@@ -28,7 +28,19 @@ Citizen.CreateThread(function()
         DisableControlAction(0, 18, display)
         DisableControlAction(0, 322, display)
         DisableControlAction(0, 106, display)
-    end
+    end 
+end)
+
+Citizen.CreateThread(function()
+    while not display do
+        Citizen.Wait(0)
+        EnableControlAction(0, 1, display)
+        EnableControlAction(0, 2, display)
+        EnableControlAction(0, 142, display)
+        EnableControlAction(0, 18, display)
+        EnableControlAction(0, 322, display)
+        EnableControlAction(0, 106, display)
+    end 
 end)
 
 function SetDisplay(bool)
